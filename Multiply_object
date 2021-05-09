@@ -1,0 +1,28 @@
+package com.company;
+
+class Number{
+    int a;
+    Number(int a){
+      this.a=a;
+    }
+    public Number multiply(Number f){
+        Number res=new Number(0);
+        res.a=a*f.a;
+        return res;
+    }
+
+    public void display() {
+        System.out.println(a);
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Number c=new Number(5);
+        Number d=new Number(6);
+        Number result=c.multiply(d);
+        result.display();
+
+    }
+}
